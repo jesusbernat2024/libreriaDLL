@@ -11,7 +11,7 @@ int main() {
   MultFunc multiplica = (MultFunc)GetProcAddress(hModule, "multiplica");
   
   int a=3, b=7, res;
-  res = multiplica(5,3);
+  res = multiplica(a,b);
   cout << res;
 
   return 0;
