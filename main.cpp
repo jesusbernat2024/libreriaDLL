@@ -9,8 +9,6 @@ int main() {
   
   HMODULE hModule = LoadLibraryA("operaciones.dll");
   MultFunc multiplica = (MultFunc)GetProcAddress(hModule, "multiplica");
-
-  //GetProcAddress(hModule,"multiplica");
   
   int a=3, b=7, res;
   res = multiplica(5,3);
